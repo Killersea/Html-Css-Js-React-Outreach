@@ -37,7 +37,7 @@ const interests = [
 	},
 ];
 
-export default function Css({ setPage }: HtmlProps) {
+export default function CssPage({ setPage }: HtmlProps) {
 	return (
 		<div className="bg-gradient-to-r from-blue-400 to-purple-500 flex justify-center items-center h-screen ">
 			<div className="bg-white shadow-lg rounded-xl p-8 w-[85%] h-[85%] overflow-auto ">
@@ -64,12 +64,12 @@ export default function Css({ setPage }: HtmlProps) {
 						about web development and love learning new technologies.
 					</p>
 				</div>
-				<div id="interests" className="flex flex-col items-center mb-8 ">
+				<div id="interests" className="flex flex-col items-center ">
 					{/* Interests */}
 					<h2 className="text-2xl font-extrabold text-black mb-4">
 						My Interests
 					</h2>
-					<div className="w-full overflow-x-auto ">
+					<div className="w-full overflow-x-auto">
 						<ScrollContainer>
 							<div className="flex w-max justify-center gap-10 text-base text-gray-700">
 								{interests.map((interest) => (

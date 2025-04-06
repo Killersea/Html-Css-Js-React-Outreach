@@ -2,7 +2,7 @@ interface HtmlProps {
 	setPage: (page: string) => void;
 }
 
-export default function Html({ setPage }: HtmlProps) {
+export default function HtmlPage({ setPage }: HtmlProps) {
 	return (
 		<div>
 			<div id="profile">
